@@ -1,0 +1,96 @@
+/*why?*/
+.body  {
+  background: #f5f5dc;
+}
+.btn-outline-secondary{
+  background: #e3e4e6;
+  border: none;
+}
+
+.list-group-item{
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.row{
+  margin: 15px 0px;
+}
+#trash{
+  border: solid 1px #c0c0c0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*margin: 15px;*/
+  height: 56px;
+  padding: 6px;
+  /*place-itmes: center;*/
+}
+
+#board > *{
+  min-height: 500px;
+}
+
+.on-delete{
+  background: #ffded5;
+}
+
+
+/*span {
+  font-size: 12px;
+  width: 90%;
+  display: inline-block;
+  border: black 1px solid;
+  margin: 4px;
+  padding: 2px;
+}*/
+/*
+#board{
+  display: flex;
+}
+#todo {
+  width: 30%;
+  background-color: white;
+  border: black 1px solid;
+  border-top: red 5px solid;
+  height: 600px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  margin: 0 10px;
+}
+#inprogress {
+  width: 30%;
+  background-color: white;
+  border: black 1px solid;
+  border-top: green 5px solid;
+  height: 600px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  margin: 0 10px;
+}
+#done {
+  width: 30%;
+  background-color: white;
+  border: black 1px solid;
+  border-top: yellow 5px solid;
+  height: 600px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+
+}
+
+#trash{
+  width: 30%;
+  height: 200px;
+  border: black 1px solid;
+  margin: 10px;
+  background: white;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
+#download-tasks{
+  margin: 10px;
+}

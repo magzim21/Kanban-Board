@@ -1,56 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Kanban-Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 48px 24px;
+        line-height: 1.6;
+        background-color: #f8fafc;
+        color: #0f172a;
+      }
 
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      main {
+        max-width: 640px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 48px;
+        box-shadow: 0 24px 48px rgba(15, 23, 42, 0.08);
+      }
 
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div class="container">
-  <div class="row">
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-         <button id="add_new_todo" class="btn btn-outline-secondary" type="button" id="button-addon1">ADD</button>
-      </div>
-      <input id="new_todo" type="text" class="form-control" placeholder="Enter new todo" aria-label="Example text with button addon" aria-describedby="button-addon1">
-    </div>
-  </div>
-  
+      header h1 {
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin-bottom: 0.75rem;
+      }
 
-    <div id="board" class="row">
-      <div id="todo" ondrop="drop(event)" ondragover="allowDrop(event)" class="col-sm-4 panels-board">
-        <div class="list-group"></div>
-      </div>
-      <div id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)" class="col-sm-4 panels-board">
-        <div class="list-group"></div>
-      </div>
-      <div id="done" ondrop="drop(event)" ondragover="allowDrop(event)" class="col-sm-4 panels-board">
-        <div class="list-group"></div>
-      </div>
-    </div>
-
-
-  <div class="row">
-    <div id="trash" ondrop="dropDel(event)" ondragover="dragOverDelBut(event)" class="col-sm" ondragleave="onDragLeave(event)"><span>Drop here to delete</span></div>
-      <!-- <button id="download-tasks" class="col-sm alert alert-secondary" role="alert">Download Tasks</button> -->
-      <button id="download-tasks" class="btn btn-outline-secondary col-sm" type="button" id="button-addon1">Download Tasks</button>
-  </div>
-
-  </div>
-
-  <script src="draganddrop.js"></script>
-  <script src="app.js" ></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+      .lede {
+        font-size: 1.15rem;
+        margin-bottom: 1.5rem;
+        color: #334155;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Kanban-Board</h1>
+      </header>
+      <p class="lede">Java Script Advanced ITEA final exam</p>
+      <p>This repository is managed as code via Terraform. Review the README to get started.</p>
+    </main>
+  </body>
 </html>
 
-
-<!-- dragstart="onDragStart(event)" !!! ?? -->
